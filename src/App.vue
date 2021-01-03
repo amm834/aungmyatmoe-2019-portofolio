@@ -1,60 +1,56 @@
 <template>
-  <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+ <v-app id="app">
+  <!-- App Bar Will Goes Here -->
+  <app-bar></app-bar>
+  <!-- View Router Will Goes Here -->
+  <v-main class="mt-16 mb-5">
+   <router-view></router-view>
+  </v-main>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+  <v-btn
+   v-scroll="onScroll"
+   v-show="fab"
+   fab
+   dark
+   fixed
+   bottom
+   right
+   color="deep-purple"
+   @click="toTop"
+   class="mb-10"
+   >
+   <v-icon>keyboard_arrow_up</v-icon>
+  </v-btn>
 
-      <v-spacer></v-spacer>
+  <!-- Page Footer -->
+  <footers></footers>
+ </v-app>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <HelloWorld/>
-    </v-main>
-  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
-export default {
+ import AppBar from '@/components/AppBar'
+ import Footers from '@/components/Footers'
+ export default {
   name: 'App',
-
   components: {
-    HelloWorld,
+   AppBar,
+   Footers
   },
-
-  data: () => ({
-    //
-  }),
-};
-</script>
+  data: ()=> {
+   return {
+    fab: false
+   }
+  },
+  methods: {
+   onScroll (e) {
+    if (typeof window === 'undefined') return;
+    const top = window.pageYOffset || e.target.scrollTop || 0
+    this.fab = top > 20
+   },
+   toTop () {
+    this.$vuetify.goTo(0)
+   }
+  }
+ }
+ </script>
