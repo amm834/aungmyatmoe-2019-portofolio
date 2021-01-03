@@ -1,24 +1,7 @@
-# ammportofolio
+# Portfolio Site Of Aung Myat Moe
 
-## Project setup
-```
-npm install
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fc0c9b6e-5d84-43c0-8a64-280a3a5f69ea/deploy-status)](https://app.netlify.com/sites/sad-cray-2918be/deploys)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Website Address
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://aungmyatmoe.netlify.app/
