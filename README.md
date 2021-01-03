@@ -8,3 +8,11 @@ Portfolio website of Aung Myat Moe under `MIT` License.
 # Website Address
 
 https://aungmyatmoe.netlify.app/
+
+# Status
+Under Deployment 
+
+# Website Type
+
+- SPA
+- PWA
