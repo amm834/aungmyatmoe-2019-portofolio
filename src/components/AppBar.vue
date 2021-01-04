@@ -41,7 +41,6 @@
        v-for="(item, i) in lists"
        :key="i"
        :to="item.route"
-       
       link
        >
        <v-list-item-icon>
