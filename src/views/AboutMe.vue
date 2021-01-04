@@ -45,6 +45,7 @@
       <v-btn
        color="deep-purple darken-3"
        text
+       @click="show = !show"
        >
        Hire Me
       </v-btn>
@@ -53,6 +54,7 @@
 
       <v-btn
        icon
+       color="deep-purple"
        @click="show = !show"
        >
        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
@@ -99,7 +101,7 @@
  export default {
   data: () => ({
    show: true,
-   selectedItem: 1,
+   selectedItem: 0,
    shortBio: `Here is ´Aung Myat Moe´ and I am 17 years old university student and self taught developer.
    I have many experience in my self projects.`,
    contactList: [{
