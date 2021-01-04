@@ -4,14 +4,14 @@
    dark
    class="deep-purple darken-1"
    dense
-   fixed
+   app
    >
    <!-- Left Side -->
    <v-avatar
     size="35px"
     >
     <img
-    src="https://avatars2.githubusercontent.com/u/65492233?s=460&u=49da7c8f97c4de53dce5262f6a79e699b5fa8a07&v=4"
+    src="@/assets/amm.jpg"
     alt="Aung Myat Moe"
     >
    </v-avatar>
@@ -27,32 +27,31 @@
   <!-- Navigation Drawer -->
   <v-navigation-drawer
    v-model="drawer"
-   absolute
-   bottom
    temporary
+   app
+   bottom
    >
-    <v-list shaped>
-     <v-subheader>MENU</v-subheader>
-     <v-list-item-group
-      v-model="selectedItem"
-      color="deep-purple"
-      >
-      <v-list-item
-       v-for="(item, i) in lists"
-       :key="i"
-       :to="item.route"
+   <v-list shaped>
+    <v-subheader>MENU</v-subheader>
+    <v-list-item-group
+     v-model="selectedItem"
+     color="deep-purple"
+     >
+     <v-list-item
+      v-for="(item, i) in lists"
+      :key="i"
+      :to="item.route"
       link
-       >
-       <v-list-item-icon>
-        <v-icon v-text="item.icon"></v-icon>
-       </v-list-item-icon>
-       <v-list-item-content>
-        <v-list-item-title v-text="item.name"></v-list-item-title>
-       </v-list-item-content>
-      </v-list-item>
-     </v-list-item-group>
-    </v-list>
-   
+      >
+      <v-list-item-icon>
+       <v-icon v-text="item.icon"></v-icon>
+      </v-list-item-icon>
+      <v-list-item-content>
+       <v-list-item-title v-text="item.name"></v-list-item-title>
+      </v-list-item-content>
+     </v-list-item>
+    </v-list-item-group>
+   </v-list>
 
   </v-navigation-drawer>
 
@@ -66,17 +65,16 @@
    return {
     drawer: false,
     selectedItem: 0,
-    lists: [
-     {
+    lists: [{
      name: 'About Me',
      route: '/',
      icon: 'person'
     },
      {
-     name: 'Contact Me',
-     route: '/contact',
-     icon: 'contact_page'
-    },
+      name: 'Contact Me',
+      route: '/contact',
+      icon: 'contact_page'
+     },
      {
       name: 'Projects',
       route: '/projects',

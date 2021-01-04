@@ -3,7 +3,7 @@
   <!-- App Bar Will Goes Here -->
   <app-bar></app-bar>
   <!-- View Router Will Goes Here -->
-  <v-main class="mt-16 mb-5">
+  <v-main>
    <router-view></router-view>
   </v-main>
   <!-- Go To Top Fav Button -->

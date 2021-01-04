@@ -19,3 +19,7 @@ Under Deployment
 
 - SPA
 - PWA
+
+# Resource Licenses
+
+<a href='https://pngtree.com/so/community-helpers-clipart'>community helpers clipart png from pngtree.com</a>

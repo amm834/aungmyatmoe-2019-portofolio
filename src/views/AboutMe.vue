@@ -19,7 +19,7 @@
        class="mt-3"
        >
        <img
-       src="https://avatars2.githubusercontent.com/u/65492233?s=460&u=49da7c8f97c4de53dce5262f6a79e699b5fa8a07&v=4"
+       src="@/assets/amm.jpg"
        alt="Aung Myat Moe"
        >
       </v-avatar>

@@ -5,10 +5,10 @@
    >
    <v-img
     contain
-    src="@/assets/contact_me.svg"
+    src="@/assets/contact_me.png"
     ></v-img>
 <v-container>
-   <v-card-title>
+   <v-card-title class="font-weight-bold">
     Contact Me
    </v-card-title>
 
@@ -24,7 +24,7 @@
     </div>
    </v-card-text>
    <v-card-text class="font-weight-bold">
-    Young and Strong enough to polish your projects.
+    Young and Strong enough to polish your projects and save your time.
    </v-card-text>
 
    <v-divider class="mx-4"></v-divider>
