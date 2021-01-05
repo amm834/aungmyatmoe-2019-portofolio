@@ -73,7 +73,7 @@
      {
       name: 'Contact Me',
       route: '/contact',
-      icon: 'contact_page'
+      icon: 'phone'
      },
      {
       name: 'Projects',

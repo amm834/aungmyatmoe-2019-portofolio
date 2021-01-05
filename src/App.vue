@@ -24,6 +24,6 @@
    AppBar,
    Footers,
    GoToTop,
-  }
+  },
  }
  </script>
