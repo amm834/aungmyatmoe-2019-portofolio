@@ -8,28 +8,6 @@
   </v-main>
   <!-- Go To Top Fav Button -->
   <go-to-top></go-to-top>
-  
-  <div class="update-dialog" v-if="prompt">
-      <div class="update-dialog__content">
-        A new version is found. Refresh to load it?
-      </div>
-      <div class="update-dialog__actions">
-        <button
-          class="update-dialog__button update-dialog__button--confirm"
-          @click="update"
-        >
-          Update
-        </button>
-        <button
-          class="update-dialog__button update-dialog__button--cancel"
-          @click="prompt = false"
-        >
-          Cancel
-        </button>
-      </div>
-    </div>
-  
-  
   <!-- Page Footer -->
   <footers></footers>
  </v-app>
@@ -46,26 +24,6 @@
    AppBar,
    Footers,
    GoToTop,
-  },
-  methods: {
-   async update() {
-    this.prompt = false;
-    await this.$workbox.messageSW({
-     type: "SKIP_WAITING"
-    });
-   }
-  },
-  data() {
-   return {
-    prompt: false
-   };
-  },
-  created() {
-   if (this.$workbox) {
-    this.$workbox.addEventListener("waiting", () => {
-     this.showUpdateUI = true;
-    });
-   }
   }
  }
  </script>
