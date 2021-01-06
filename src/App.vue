@@ -4,26 +4,29 @@
   <app-bar></app-bar>
   <!-- View Router Will Goes Here -->
   <v-main>
-   <router-view></router-view>
+      <loader v-if="$root.loading"></loader>
+   <router-view v-else></router-view>
   </v-main>
   <!-- Go To Top Fav Button -->
   <go-to-top></go-to-top>
   <!-- Page Footer -->
   <footers></footers>
- </v-app>
 
+ </v-app>
 </template>
 
 <script>
  import AppBar from '@/components/AppBar';
  import Footers from '@/components/Footers';
  import GoToTop from '@/components/GoToTop';
+ import Loader from '@/components/Loader';
  export default {
   name: 'App',
   components: {
    AppBar,
    Footers,
    GoToTop,
+   Loader
   },
  }
  </script>

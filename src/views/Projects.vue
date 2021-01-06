@@ -77,18 +77,12 @@
     </v-list-item-group>
    </v-list>
   </v-card>
-  <loader v-if="overlay"></loader>
  </v-container>
 </template>
 <script>
- import Loader from '@/components/Loader';
  export default {
-  components:{
-   Loader
-  },
   data() {
    return {
-    overlay:true,
     repos: [],
     projects: [{
      name: 'Portofolio Website UI',
@@ -138,14 +132,13 @@
   methods: {
    async getRepos() {
     try {
-     const res = await this.$http.get(`https://api.github.com/users/amm834/repos`);
-     this.overlay = false;
-
+     const res = await this.$http.get(`https://api.github.com/users/amm834/repos?per_page=100`);
      res.data.forEach(data=> {
       this.repos.push(data)
+      this.$root.loading = false;
      })
     }catch(err) {
-     this.overlay = false;
+     this.$root.loading = false;
     }
    }
   },
