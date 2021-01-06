@@ -1,7 +1,7 @@
 <template>
  <v-container>
-  <h1 class="text-h5">Featured Projects</h1>
-  <v-row class="my-3">
+  <h3 class="font-weight-bold mt-3">Featured Projects</h3>
+  <v-row class="mb-3">
    <v-col md="8" sm="8" class="mx-auto">
     <v-card
      v-for="(project,i) in projects" :key="i"
@@ -46,10 +46,10 @@
    </v-col>
   </v-row>
   <!-- All Repos -->
-  <h1 class="text-h5 my-4">All Of My Projects And Forks</h1>
+  <h3 class="font-weight-bold my-5">All Of My Projects</h3>
   <v-card
    class="mx-auto"
-   tile
+   flat
    >
    <v-list dense>
     <v-subheader>Repos</v-subheader>
@@ -146,7 +146,5 @@
    this.getRepos();
   }
  }
-
-
 
  </script>

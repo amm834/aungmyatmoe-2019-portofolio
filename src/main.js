@@ -26,5 +26,5 @@ router.beforeEach((to, from, next) => {
 })
 
 router.afterEach(() => {
- setTimeout(() => app.loading = false, 1000) // timeout for demo purposes
+ setTimeout(() => app.loading = false,3000) // timeout for demo purposes
 })

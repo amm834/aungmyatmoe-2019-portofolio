@@ -1,17 +1,19 @@
 <template>
  <v-app id="app">
-  <!-- App Bar Will Goes Here -->
-  <app-bar></app-bar>
-  <!-- View Router Will Goes Here -->
-  <v-main>
-      <loader v-if="$root.loading"></loader>
-   <router-view v-else></router-view>
-  </v-main>
-  <!-- Go To Top Fav Button -->
-  <go-to-top></go-to-top>
-  <!-- Page Footer -->
-  <footers></footers>
-
+  <!-- Loader -->
+  <loader v-if="$root.loading"></loader>
+  <div v-else>
+   <!-- App Bar Will Goes Here -->
+   <app-bar></app-bar>
+   <!-- View Router Will Goes Here -->
+   <v-main>
+    <router-view></router-view>
+   </v-main>
+   <!-- Go To Top Fav Button -->
+   <go-to-top></go-to-top>
+   <!-- Page Footer -->
+   <footers></footers>
+  </div>
  </v-app>
 </template>
 

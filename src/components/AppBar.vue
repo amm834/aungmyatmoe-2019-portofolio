@@ -81,11 +81,6 @@
       icon: 'folder'
      },
      {
-      name: 'Education',
-      route: '/education',
-      icon: 'mdi-school'
-     },
-     {
       name: 'Skills',
       route: '/skills',
       icon: 'accessibility'

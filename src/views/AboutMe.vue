@@ -94,6 +94,38 @@
     </v-card>
    </v-col>
   </v-row>
+  <!-- Education -->
+  <v-row justify="center" class="my-5">
+       <v-card width="500" outlined v-ripple>
+    <v-card-text>
+     <div class="font-weight-bold ml-8 mb-2">
+      Education
+     </div>
+     <v-timeline
+      align-top
+      dense
+      >
+      <v-timeline-item
+       v-for="(school,i) in schools"
+       :key="i"
+       :color="school.color"
+       small
+       >
+       <div>
+        <div class="font-weight-normal">
+         <strong>{{ school.time}}</strong> {{school.status}}
+        </div>
+        <div>
+         {{ school.name }}
+        </div>
+       </div>
+      </v-timeline-item>
+     </v-timeline>
+    </v-card-text>
+   </v-card>
+
+   
+  </v-row>
 
  </v-container>
 </template>
@@ -114,6 +146,26 @@
      text: 'Freelancer,Part Time', icon: 'mdi-clock'
     },
    ],
+   schools: [{
+    time: '2019',
+    name: `No(3).B.E.H.S,Myoma,Letpadan,Bago,Myanmar`,
+    color: 'deep-purple lighten-1',
+    status: 'Present'
+   },
+    {
+     time: '2020',
+     name: `W3 Computer Basic School`,
+     color: 'purple lighten-1',
+     status: 'Present'
+    },
+    {
+     time: '2020',
+     name: `University Of Pyay`,
+     color: 'success lighten-1',
+     status: 'Studying'
+    },
+   ],
+
   }),
  }
  </script>

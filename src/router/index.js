@@ -17,8 +17,7 @@ const routes = [{
  {
   path: '/projects',
   component: Projects
- },
-];
+ }];
 
 
 const router = new VueRouter({
