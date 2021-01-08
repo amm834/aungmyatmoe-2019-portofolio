@@ -1,3 +1,4 @@
+![Node.js CI](https://github.com/amm834/aungmyatmoe/workflows/Node.js%20CI/badge.svg)
 [![Build Status](https://travis-ci.com/amm834/aungmyatmoe.svg?branch=main)](https://travis-ci.com/amm834/aungmyatmoe)
 
 [![Known Vulnerabilities](https://snyk.io/test/github/amm834/aungmyatmoe/badge.svg?targetFile=package.json)](https://snyk.io/test/github/amm834/aungmyatmoe?targetFile=package.json)
