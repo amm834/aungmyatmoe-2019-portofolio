@@ -12,6 +12,8 @@ Portfolio website of Aung Myat Moe under `MIT` License.
 
 https://aungmyatmoe.netlify.app/
 
+--------------------------------
+
 # Status
 Under Deployment 
 
@@ -19,7 +21,3 @@ Under Deployment
 
 - SPA
 - PWA
-
-# Resource Licenses
-
-<a href='https://pngtree.com/so/community-helpers-clipart'>community helpers clipart png from pngtree.com</a>
