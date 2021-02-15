@@ -22,7 +22,6 @@ Under Deployment
 - SPA
 - PWA
 
-=======
 
 # Resource Licenses
 
